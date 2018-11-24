@@ -23,57 +23,54 @@
  *
  */
 
- #ifndef _AI_AUDIO_V1_0_BOARD_H_
- #define _AI_AUDIO_V1_0_BOARD_H_
- 
- #ifdef __cplusplus
- extern "C" {
- #endif
- 
- /* SD card related */
- #define SD_CARD_INTR_GPIO           GPIO_NUM_34
- #define SD_CARD_INTR_SEL            GPIO_SEL_34
- #define SD_CARD_OPEN_FILE_NUM_MAX   5
- 
- //#define GPIO_AUXIN_DETECT           39
- 
- /* LED indicators */
- #define GPIO_LED_GREEN              22
- #define GPIO_LED_RED                -1
- 
- /* I2C gpios */
- #define IIC_CLK                     32
- #define IIC_DATA                    33
- 
- /* PA */
- #define GPIO_PA_EN                  GPIO_NUM_21
- #define GPIO_SEL_PA_EN              GPIO_SEL_21
- 
- /* Press button related */
- #define GPIO_SEL_REC                GPIO_SEL_36    //SENSOR_VP
- #define GPIO_SEL_MODE               GPIO_SEL_13    //SENSOR_VN
- #define GPIO_REC                    GPIO_NUM_36
- #define GPIO_MODE                   GPIO_NUM_13
- 
- /* Touch pad related */
- #define TOUCH_SEL_SET               GPIO_SEL_19
- #define TOUCH_SEL_PLAY              GPIO_SEL_23
- #define TOUCH_SEL_VOLUP             GPIO_SEL_18
- #define TOUCH_SEL_VOLDWN            GPIO_SEL_5
+#ifndef _AI_AUDIO_V1_0_BOARD_H_
+#define _AI_AUDIO_V1_0_BOARD_H_
 
- #define TOUCH_SET                   GPIO_NUM_19
- #define TOUCH_PLAY                  GPIO_NUM_23
- #define TOUCH_VOLUP                 GPIO_NUM_18
- #define TOUCH_VOLDWN                GPIO_NUM_5
- 
- /* I2S gpios */
- #define IIS_SCLK                    27
- #define IIS_LCLK                    26
- #define IIS_DSIN                    25
- #define IIS_DOUT                    35
- 
- #ifdef __cplusplus
- }
- #endif
- 
- #endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* SD card related */
+#define SD_CARD_INTR_GPIO           GPIO_NUM_34
+#define SD_CARD_INTR_SEL            GPIO_SEL_34
+#define SD_CARD_OPEN_FILE_NUM_MAX   5
+
+//#define GPIO_AUXIN_DETECT           39
+
+// LED indicators
+#define GPIO_LED_GREEN              GPIO_NUM_22
+//#define GPIO_LED_RED                -1
+
+// I2C gpios
+#define IIC_CLK                     GPIO_NUM_32
+#define IIC_DATA                    GPIO_NUM_33
+
+// I2S GPIOs
+#define IIS_SCLK                    GPIO_NUM_27
+#define IIS_LCLK                    GPIO_NUM_26
+#define IIS_DSIN                    GPIO_NUM_25
+#define IIS_DOUT                    GPIO_NUM_35
+
+/* PA */
+#define GPIO_PA_EN                  GPIO_NUM_21
+#define GPIO_SEL_PA_EN              GPIO_SEL_21
+
+// buttons
+#define KEY1_SEL                    GPIO_SEL_36
+#define KEY1_GPIO                   GPIO_NUM_36
+#define KEY2_SEL                    GPIO_SEL_13
+#define KEY2_GPIO                   GPIO_NUM_13
+#define KEY3_SEL                    GPIO_SEL_19
+#define KEY3_GPIO                   GPIO_NUM_19
+#define KEY4_SEL                    GPIO_SEL_23
+#define KEY4_GPIO                   GPIO_NUM_23
+#define KEY5_SEL                    GPIO_SEL_18
+#define KEY5_GPIO                   GPIO_NUM_18
+#define KEY6_SEL                    GPIO_SEL_5
+#define KEY6_GPIO                   GPIO_NUM_5
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
