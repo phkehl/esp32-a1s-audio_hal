@@ -4,3 +4,5 @@ esp-adf
 xtensa-esp32-elf
 sdkconfig.old
 sdkconfig
+*~
+
