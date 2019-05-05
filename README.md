@@ -12,14 +12,14 @@ Clone this repository into *components/audio_hal* of your esp-adf project:
 
 ```
 cd /path/to/your/project
-git clone https://github.com/phkehl/esp32-a1s-audio_hal components/audio_hal
+git clone https://github.com/phkehl/esp32-a1s-audio_hal.git components/audio_hal
 ```
 
 Or add it as a git submodule:
 
 ```
 cd /path/to/your/project
-git submodule add -b master git@github.com:phkehl/esp32-a1s-audio_hal.git components/audio_hal
+git submodule add -b master https://github.com/phkehl/esp32-a1s-audio_hal.git components/audio_hal
 ```
 
 This will then take precedence over the one in *$ADF_PATH/components/audio_hal*.
