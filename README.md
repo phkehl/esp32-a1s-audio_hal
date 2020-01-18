@@ -1,10 +1,10 @@
-# esp-adf (esp-idf) audio_hal component for AI-Thinker's ESP32-A1S module
+# esp-adf (esp-idf) audio_hal component for AI-Thinker's ESP32-A1S module (AC101 codec)
 
 This is a *audio_hal* component for AI-Thinker's *ESP32-A1S* [1] module
 respectively *ESP32 Audio Kit* [2]. The audio_hal component shipped with the
 esp-adf [3] unfortunately doesn't provide any interface to add third-party
 codec. This is based on AI-Thinker's code [4], which is an esp-adf fork with
-modifications for this codec.
+modifications for this codec (AC101).
 
 How to use:
 
